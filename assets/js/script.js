@@ -245,13 +245,13 @@ var loadTasks = function() {
   if (!savedTasks) {
     return false;
   }
-  console.log("Saved tasks found!");
   // Converts tasks from the string format back into an array of objects.
   savedTasks = JSON.parse(savedTasks);
-  // Iterates through a tasks array and creates task elements on the page from it.
+  // loop through savedTasks array
   for (var i = 0; i < savedTasks.length; i++) {
     createTaskEl(savedTasks[i]);
   }
+  
 };
 
 
